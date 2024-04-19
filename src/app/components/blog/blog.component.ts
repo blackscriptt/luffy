@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BlogService } from 'src/app/services/blog.service';
 import { Post } from 'src/app/shared/models/post';
 import { map } from 'rxjs/operators';
@@ -16,7 +16,8 @@ export class BlogComponent implements OnInit {
 
   constructor(
     private blogService: BlogService,
-    private activadetRoute: ActivatedRoute
+    private activadetRoute: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -38,7 +39,11 @@ export class BlogComponent implements OnInit {
       .pipe(map(x => x.find(y => y.url == this.url)))
       .subscribe({
         next: (x) => {
+          if(!x) this.router.navigateByUrl("/404");
           this.post = x!;
+        },
+        error: (err) => {
+          
         }
       })
 
