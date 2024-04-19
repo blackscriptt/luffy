@@ -1,5 +1,5 @@
 <!-- start of breadcumb-section -->
-<div class="bg-[url(../images/page-title.jpg)] bg-no-repeat bg-center bg-cover min-h-[400px] relative flex justify-center flex-col z-10
+<div style="background-image: url('assets/bg.jpg');" class="bg-[url(../images/page-title.jpg)] bg-no-repeat bg-center bg-cover min-h-[400px] relative flex justify-center flex-col z-10
 sm:min-h-[250px] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#232f4b]
 before:-z-10 before:opacity-70 md:mt-3">
 <div class="wraper">
@@ -31,171 +31,15 @@ before:-z-10 before:opacity-70 md:mt-3">
         <div class="col-span-8 md:col-span-12">
             <div>
                 <div class="mb-[70px]" *ngFor="let item of posts">
-                    <img class="w-full mb-[35px]" [src]="item.image" alt style="height: 400px;object-fit: cover;">
+                    <img class="w-full mb-[35px]" [src]="item.image" alt style="height: 400px;object-fit: cover;width: 100%;">
                     
                     <h3
                         class="text-[34px] md:text-[25px] sm:text-[22px] text-white font-bold font-base-font leading-[40px] transition-all mb-[20px] group">
-                        <a href="blog-single.html" class="group-hover:text-[#3756f7;] transition-all text-[#232f4b]
+                        <a [routerLink]="'/bagimlilik/'+item.url" class="group-hover:text-[#3756f7;] transition-all text-[#232f4b]
                             font-heading-font">{{item.title}}</a></h3>
                     <p class="text-[#666] leading-[24px] text-[16px] mb-[20px]" *ngFor="let paragraph of item.paragraphs | slice: 0:1">{{paragraph.paragraph}}</p>
                     <a [routerLink]="'/bagimlilik/'+item.url"
                         class="text-[#666] uppercase underline font-base-font text-[15px] font-semibold transition-all hover:text-[#3756f7;]">Devamını Oku..</a>
-                </div>
-                
-                <div class="mb-[70px] relative bg-[#f9faff] pt-[25px] px-[35px] pb-[45px]
-                    before:absolute before:right-[20px] before:top-[20px] before:font-['flaticon']
-                     before:text-[90px] before:leading-[80px] before:text-[#e5f0fb]
-                      before:content-['\f109'] before:z-[-1] z-[1]">
-                    <div class="overflow-hidden my-[35px]">
-                        <ul>
-                            <li
-                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#666]">
-                                <i
-                                    class="relative top-0 mr-[3px] text-[15px] text-[#666]  fi flaticon-user"></i>
-                                By <a class="text-[#232f4b] transition-all hover:text-[#3756f7;]"
-                                    href="#">Jenny
-                                    Watson</a> </li>
-                            <li
-                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#666] ml-[20px] pl-[20px] relative before:absolute before:left-0 before:top-[50%] before:w-[7px] before:h-[7px] before:rounded-[50%] before:content-[''] before:translate before:-translate-y-1/2 before:bg-[#3756f7;] z-10 before:-z-10">
-                                <i
-                                    class="relative top-0 mr-[3px] text-[15px] text-[#666]  fi flaticon-comment-white-oval-bubble"></i>
-                                Comments 35 </li>
-                            <li
-                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#666] ml-[20px] pl-[20px] relative before:absolute before:left-0 before:top-[50%] before:w-[7px] before:h-[7px] before:rounded-[50%] before:content-[''] before:translate before:-translate-y-1/2 before:bg-[#3756f7;] z-10 before:-z-10">
-                                <i
-                                    class="relative top-0 mr-[3px] text-[15px] text-[#666]  fi flaticon-calendar-1"></i>
-                                24 Jun 2024</li>
-                        </ul>
-                    </div>
-                    <h3
-                        class="text-[34px] md:text-[25px] sm:text-[22px] text-white font-bold font-base-font leading-[40px] transition-all mb-[20px] group">
-                        <a href="blog-single.html" class="group-hover:text-[#3756f7;] transition-all text-[#232f4b]
-                            font-heading-font">Tips From Successful Small Business Owners</a></h3>
-                    <p class="text-[#666] leading-[24px] text-[16px] mb-[20px]">Consulting is a great career
-                        path if you want to build a broad skill set that includes everything from critical
-                        thinking and strategic planning to communications. If you love rising to a
-                        challenge..</p>
-                    <a href="blog-single.html"
-                        class="text-[#666] uppercase underline font-base-font text-[15px] font-semibold transition-all hover:text-[#3756f7;]">READ
-                        MORE...</a>
-                </div>
-
-                <!-- <div class="relative mb-[70px]">
-                    <div class="post-slider owl-carousel">
-                        <img src="assets/images/blog/img-11.jpg" alt>
-                        <img src="assets/images/blog/img-12.jpg" alt>
-                    </div>
-                    <div class="overflow-hidden my-[35px]">
-                        <ul>
-                            <li
-                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#666]">
-                                <i
-                                    class="relative top-0 mr-[3px] text-[15px] text-[#666]  fi flaticon-user"></i>
-                                By <a class="text-[#232f4b] transition-all hover:text-[#3756f7;]"
-                                    href="#">Jenny
-                                    Watson</a> </li>
-                            <li
-                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#666] ml-[20px] pl-[20px] relative before:absolute before:left-0 before:top-[50%] before:w-[7px] before:h-[7px] before:rounded-[50%] before:content-[''] before:translate before:-translate-y-1/2 before:bg-[#3756f7;] z-10 before:-z-10">
-                                <i
-                                    class="relative top-0 mr-[3px] text-[15px] text-[#666]  fi flaticon-comment-white-oval-bubble"></i>
-                                Comments 35 </li>
-                            <li
-                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#666] ml-[20px] pl-[20px] relative before:absolute before:left-0 before:top-[50%] before:w-[7px] before:h-[7px] before:rounded-[50%] before:content-[''] before:translate before:-translate-y-1/2 before:bg-[#3756f7;] z-10 before:-z-10">
-                                <i
-                                    class="relative top-0 mr-[3px] text-[15px] text-[#666]  fi flaticon-calendar-1"></i>
-                                24 Jun 2024</li>
-                        </ul>
-                    </div>
-                    <h3
-                        class="text-[34px] md:text-[25px] sm:text-[22px] text-white font-bold font-base-font leading-[40px] transition-all mb-[20px] group">
-                        <a href="blog-single.html" class="group-hover:text-[#3756f7;] transition-all text-[#232f4b]
-                            font-heading-font">Top Five Things to do in Gerome, Cappadocia, Turkey</a></h3>
-                    <p class="text-[#666] leading-[24px] text-[16px] mb-[20px]">Consulting is a great career
-                        path if you want to build a broad skill set that includes everything from critical
-                        thinking and strategic planning to communications. If you love rising to a
-                        challenge..</p>
-                    <a href="blog-single.html"
-                        class="text-[#666] uppercase underline font-base-font text-[15px] font-semibold transition-all hover:text-[#3756f7;]">READ
-                        MORE...</a>
-                </div> -->
-
-                <div class="relative mb-[70px]">
-                    <div class="relative 
-                before:absolute before:left-0 before:top-0 before:w-full before:h-full 
-                before:bg-[rgba(34,32,71,.5)] before:duration-150 before:opacity-0 before:invisible
-                 hover:before:opacity-100 hover:before:visible">
-                        <div class="wpo-minimal-img">
-                            <img class="w-full" src="assets/images/blog/img-12.jpg" alt="">
-                        </div>
-                        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                            <a href="https://www.youtube.com/embed/7Jv48RQ_2gk" class="video-btn-s2 block w-[60px] h-[60px] bg-white text-center leading-[60px] text-[#3756f7]
-                        text-[30px] border-[1px] border-white rounded-[50%] relative before:w-[130%]
-                         before:h-[130%] before:rounded-[50%] before:absolute before:left-[-8px]
-                         before:top-[-8px] before:z-[-1] before:animate-[pulses_1s_infinite]
-                         before:bg-[rgba(255,255,255,0.4)] video-btn after:border-l-[#3756f7]"
-                                data-type="iframe">
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="my-[35px]">
-                        <ul>
-                            <li
-                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#666]">
-                                <i
-                                    class="relative top-0 mr-[3px] text-[15px] text-[#666]  fi flaticon-user"></i>
-                                By <a class="text-[#232f4b] transition-all hover:text-[#3756f7;]"
-                                    href="#">Jenny
-                                    Watson</a> </li>
-                            <li
-                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#666] ml-[20px] pl-[20px] relative before:absolute before:left-0 before:top-[50%] before:w-[7px] before:h-[7px] before:rounded-[50%] before:content-[''] before:translate before:-translate-y-1/2 before:bg-[#3756f7;] z-10 before:-z-10">
-                                <i
-                                    class="relative top-0 mr-[3px] text-[15px] text-[#666]  fi flaticon-comment-white-oval-bubble"></i>
-                                Comments 35 </li>
-                            <li
-                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#666] ml-[20px] pl-[20px] relative before:absolute before:left-0 before:top-[50%] before:w-[7px] before:h-[7px] before:rounded-[50%] before:content-[''] before:translate before:-translate-y-1/2 before:bg-[#3756f7;] z-10 before:-z-10">
-                                <i
-                                    class="relative top-0 mr-[3px] text-[15px] text-[#666]  fi flaticon-calendar-1"></i>
-                                24 Jun 2024</li>
-                        </ul>
-                    </div>
-                    <h3
-                        class="text-[34px] md:text-[25px] sm:text-[22px] mt-[30px] text-white font-bold font-base-font inline-block leading-[40px] transition-all mb-[20px] group">
-                        <a href="blog-single.html" class="group-hover:text-[#3756f7;] transition-all text-[#232f4b]
-                            font-heading-font">10 Reasons Why You Need To Visit Turkey</a></h3>
-                    <p class="text-[#666] leading-[24px] text-[16px] mb-[20px]">Consulting is a great career
-                        path if you want to build a broad skill set that includes everything from critical
-                        thinking and strategic planning to communications. If you love rising to a
-                        challenge..</p>
-                    <a href="blog-single.html"
-                        class="text-[#666] uppercase underline font-base-font text-[15px] font-semibold transition-all hover:text-[#3756f7;]">READ
-                        MORE...</a>
-                </div>
-
-                <div class="mt-[60px] text-left">
-                    <ul class="inline-block overflow-hidden text-center">
-                        <li class="float-left mr-[10px]">
-                            <a href="#" aria-label="Previous"
-                                class="font-heading-font-s2 font-bold w-[50px] h-[50px] leading-[50px] text-[#0a272c] block bg-[#f5f5f5] transition-all hover:bg-[#3756f7] hover:text-white">
-                                <i class="fi ti-angle-left"></i>
-                            </a>
-                        </li>
-                        <li class="active float-left mr-[10px]"><a href="#" class="font-heading-font-s2 font-bold w-[50px] h-[50px] leading-[50px]
-                                text-white block bg-[#3756f7] transition-all hover:bg-[#3756f7]">1</a>
-                        </li>
-                        <li class="float-left mr-[10px]"><a href="#"
-                                class="font-heading-font-s2 font-bold w-[50px] h-[50px] leading-[50px] text-[#0a272c] block bg-[#f5f5f5] transition-all hover:bg-[#3756f7] hover:text-white">2</a>
-                        </li>
-                        <li class="float-left mr-[10px]"><a href="#"
-                                class="font-heading-font-s2 font-bold w-[50px] h-[50px] leading-[50px] text-[#0a272c] block bg-[#f5f5f5] transition-all hover:bg-[#3756f7] hover:text-white">3</a>
-                        </li>
-                        <li class="float-left mr-[10px]">
-                            <a href="#" aria-label="Next"
-                                class="font-heading-font-s2 font-bold w-[50px] h-[50px] leading-[50px] text-[#0a272c] block bg-[#f5f5f5] transition-all hover:bg-[#3756f7] hover:text-white">
-                                <i class="fi ti-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
