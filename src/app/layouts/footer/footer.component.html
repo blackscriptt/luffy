@@ -1,0 +1,83 @@
+ <!-- start footer -->
+ <section class="bg-[#191a1f] relative z-[1]">
+    <div class="py-[80px] md:pb-[60px] relative overflow-hidden">
+        <div class="wraper">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-3 lg:col-span-3 md:col-span-6 sm:col-span-6 col:col-span-12 md:mb-[30px]">
+                    <div class="max-w-[180px] mb-[30px]">
+                        <img src="assets/images/logo2.png" alt="blog">
+                    </div>
+                    <p class="mb-[10px] text-white text-[16px] leading-[30px]">There are many variations of
+                        passages of Lorem Ipsum available, but the majority have suffered alteration in some
+                        form, by injected humour, or randomised words which don't look even slightly
+                        believable.</p>
+                </div>
+
+                <!-- <div class="col-span-3 lg:col-span-3 md:col-span-6 sm:col-span-6 col:col-span-12 md:mb-[30px]">
+                    <div class="pl-[50px] lg:pl-0 md:pl-0">
+                        <div class="mb-[30px]">
+                            <h3 class="text-[25px] text-white capitalize relative font-heading-font font-bold
+                             ">Kategoriler</h3>
+                        </div>
+                        <ul>
+                            <li class="relative z-[1] py-[6px] pl-[15px] before:absolute before:left-0
+                                before:top-[50%] before:-translate-y-1/2 before:-z-[1] before:w-[5px]
+                                before:h-[2px] before:bg-[#cbcbcb] before:transition-all before:duration-300
+                                hover:before:bg-[#3756f7] group" *ngFor="let item of categories">
+                                <a [routerLink]="'/bagimliliklar/'+item.url" class="text-[16px] transition-all text-white 
+                                   duration-300 group-hover:text-[#3756f7]">
+                                   {{item.name}}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="col-span-3 lg:col-span-3 md:col-span-6 sm:col-span-6 col:col-span-12 md:mb-[30px]">
+                    <div class="px-[20px] lg:px-0 ">
+                        <div class="mb-[30px]">
+                            <h3 class="text-[25px] text-white capitalize relative font-heading-font font-bold
+                             ">Son Eklenenler</h3>
+                        </div>
+                        <ul>
+                            <li class="mb-[15px] border-b border-[#eeeeee]" *ngFor="let item of posts | slice: 0:2">
+                                <h4 class="mb-[5px]">
+                                    <a [routerLink]="'/bagimlilik/'+item.url" class="text-[18px] leading-[30px] font-heading-font font-bold text-white transition-all duration-300
+                                        hover:text-[#3756f7]">
+                                        {{item.title}}
+                                    </a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-span-3 lg:col-span-3 md:col-span-6 sm:col-span-6 col:col-span-12 md:mb-[30px]">
+                    <div class="mb-[30px]">
+                        <h3 class="text-[25px] text-white capitalize relative font-heading-font font-bold
+                             ">Nasıl Bırakılır?</h3>
+                    </div>
+                    <p class="mb-[10px] text-white text-[16px] leading-[30px]">
+                        Türkiye’ye özgü bir bağımlılık rehabilitasyon sistemi olan, her biri 40’ar yatak kapasitesine sahip Yeşilay Rehabilitasyon Merkezleri ile alkol ve madde bağımlısı bireylere yatarak tedavi hizmeti vermektedir.
+                    </p>
+
+                    <a href="https://yesilayrehabilitasyonmerkezi.org.tr/" target="_blank" class="inline-block text-white p-[10px_20px] bg-[#3756f7] border-0 outline-0
+                    text-white text-[18px] rounded-[5px] pr-24 relative mt-3 before:absolute before:text-[18px] before:right-[15px] before:top-1/2 before:-translate-y-1/2 before:font-['themify'] before:content-['\e628']
+                                 ">Detaylı Bilgi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center relative bg-[#101010] py-[20px]">
+        <div class="wraper">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 md:col-span-12">
+                    <p class="text-[15px] text-white text-center">
+                        Copyright &copy; 2024 // All Right Reserved by
+                        <a href="https://blackscriptt.github.io/web-homework/" target="_blank" class="text-[#3756f7]">Svart.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

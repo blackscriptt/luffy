@@ -1,0 +1,76 @@
+<!-- start of breadcumb-section -->
+<div class="bg-[url(../images/page-title.jpg)] bg-no-repeat bg-center bg-cover min-h-[400px] relative flex justify-center flex-col z-10
+            sm:min-h-[250px] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#232f4b]
+            before:-z-10 before:opacity-70 md:mt-3">
+    <div class="wraper">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12">
+                <div class="text-center">
+                    <h2 class="text-6xl text-white mt-[-10px] mb-[20px] sm:text-3xl sm:mb-[10px]">Bağımlılık
+                    </h2>
+                    <ul class="">
+                        <li
+                            class="inline-block px-[5px] text-white relative text-xl font-heading-font sm:text-lg after:content-['/'] after:left-[7px]">
+                            <a routerLink="/">Ana Sayfa</a>
+                        </li>
+                        <li
+                            class="text-[#cbd4fd] inline-block px-[5px]  relative text-xl font-heading-font sm:text-lg ">
+                            <span>Bağımlılık</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of wpo-breadcumb-section-->
+
+<!-- start wpo-blog-pg-section -->
+<div class="py-[60px] md:py-[40px]">
+    <!-- start of hero -->
+    <div class="wraper">
+        <div class="grid grid-cols-12 gap-x-4">
+            <div class="col-span-8 md:col-span-12">
+                <div class="mb-[70px]">
+                    <img class="w-full" [src]="post.image" alt>
+                    <!-- <div class="overflow-hidden my-[35px]">
+                        <ul>
+                            <li
+                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#687693]">
+                                <i class="relative top-0 mr-[3px] text-[15px] text-[#687693]  fi flaticon-user"></i>
+                                By <a class="text-[#687693] transition-all hover:text-[#3756f7]" href="#">Jenny
+                                    Watson</a>
+                            </li>
+                            <li
+                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#687693] ml-[20px] pl-[20px] relative before:absolute before:left-0 before:top-[50%] before:w-[7px] before:h-[7px] before:rounded-[50%] before:content-[''] before:translate before:-translate-y-1/2 before:bg-[#3756f7] z-10 before:-z-10">
+                                <i
+                                    class="relative top-0 mr-[3px] text-[15px] text-[#687693]  fi flaticon-comment-white-oval-bubble"></i>
+                                Comments 35
+                            </li>
+                            <li
+                                class="text-[14px] font-medium uppercase float-left col:float-none col:block col:ml-[0px] col:mb-[5px] text-[#687693] ml-[20px] pl-[20px] relative before:absolute before:left-0 before:top-[50%] before:w-[7px] before:h-[7px] before:rounded-[50%] before:content-[''] before:translate before:-translate-y-1/2 before:bg-[#3756f7] z-10 before:-z-10">
+                                <i
+                                    class="relative top-0 mr-[3px] text-[15px] text-[#687693]  fi flaticon-calendar-1"></i>
+                                24 Jun 2024
+                            </li>
+                        </ul>
+                    </div> -->
+                    <h3 class="text-[34px] md:text-[25px] sm:text-[22px] text-[#0a272c]  leading-[40px] mb-[20px] mt-[20px]">
+                        {{post.title}}</h3>
+                    <p class="text-[#687693] leading-[24px] text-[16px] mb-[20px]" *ngFor="let item of post.paragraphs">
+                        {{item.paragraph}}
+                    </p>
+                  
+                </div>
+             
+  <!-- end comments-area -->
+            </div>
+            <div class="col-span-4 md:col-span-12 ">
+                <div class="max-w-[400px] pl-7 lg:pl-0">
+                    <ly-aside></ly-aside>
+                </div>
+            </div>
+            <!-- end of wpo-hero-slide-section-->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "url": "madde-bagimliliklari",
+        "name": "Madde Bağımlılıkları"
+    },
+    {
+        "id": 2,
+        "url": "davranissal-bagimliliklar",
+        "name": "Davranışsal Bağımlılıklar"
+    },
+    {
+        "id": 3,
+        "url": "fast-food-ve-seker",
+        "name": "Fast Food ve Şeker"
+    }
+]
